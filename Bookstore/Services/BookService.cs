@@ -4,7 +4,7 @@ using System.Xml.Linq;
 
 namespace Bookstore.Services
 {
-    public class BookService
+    public class BookService : IBookService
     {
         static List<Book> Books { get; }
         static int nextId = 3;

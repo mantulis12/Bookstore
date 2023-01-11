@@ -8,9 +8,9 @@ namespace Bookstore.Controllers
     public class BookController : ControllerBase
     {
         private BookService _bookService;
-        public BookController()
+        public BookController(IBookService bookService)
         {
-            this._bookService = new BookService();
+            this._bookService = (BookService) bookService;
         }
 
         //GET

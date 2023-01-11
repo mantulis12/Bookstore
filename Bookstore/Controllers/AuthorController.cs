@@ -7,9 +7,9 @@ namespace Bookstore.Controllers
     public class AuthorController : ControllerBase
     {
         private AuthorService _authorService;
-        public AuthorController()
+        public AuthorController(IAuthorService authorService)
         {
-            this._authorService = new AuthorService();
+            this._authorService = (AuthorService) authorService;
         }
 
         //GET

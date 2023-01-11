@@ -3,7 +3,7 @@ using System.Xml.Linq;
 
 namespace Bookstore.Services
 {
-    public class AuthorService
+    public class AuthorService : IAuthorService
     {
         static List<Author> Authors { get; }
         static int nextId = 3;
